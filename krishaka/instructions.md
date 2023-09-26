@@ -97,4 +97,9 @@ roslaunch krishaka world.launch
 ```
 
 ## Now I have written some scripts in /scripts directory that subscribes to specific topics and publishes on certain topic or simply prints the sensor data.
+
+## To move the robot there is a simple script launch it by-
+```bash
+rosrun krishaka first_node.py
+```
  
