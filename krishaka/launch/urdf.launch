@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="robot_description" command="xacro '$(find krishaka)/urdf/mpav.urdf.xacro'"/>
+   
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"/>
+    
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find krishaka)/config/sample_world.world"/>
+        
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+        
+        
+    </include>
+
+
+     <node name="spawning_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model mpav -param robot_description" respawn="false" output="screen"/>
+    
+    <node name="pose_publisher_node" pkg="krishaka" type="pose_publisher_script.py" output="screen" />
+</launch>
