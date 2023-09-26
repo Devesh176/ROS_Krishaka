@@ -1,14 +1,13 @@
 # Here is the summary of work
 
 ## Creating package 'krishaka' , dependencies of the package are 
-<br>
-1. roscpp
-2. rospy
-3. std_msgs
-4. turtlesim
-5. gazebo_ros
-6. gazebo_msgs
-</br>
+- roscpp
+- rospy
+- std_msgs
+- turtlesim
+- gazebo_ros
+- gazebo_msgs
+
 
 ## We can create the package with the command 
 ```bash
