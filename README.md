@@ -30,11 +30,10 @@ nano krishaka/urdf/new_mpav.urdf.xacro # The path is absolute path from /home di
 
 
 ## The follwing files are sensor files 
-<br>
-new_depth_camera.gazebo.xacro
-new_hokuyo_laser_sensor.gazebo.xacro
-new_imu_sensor.gazebo.xacro
-</br>
+- new_depth_camera.gazebo.xacro
+- new_hokuyo_laser_sensor.gazebo.xacro
+- new_imu_sensor.gazebo.xacro
+  
 
 ## Now we need to add the necessary plugins into the urdf file for the sensors, we include following plugins
 ```xml
