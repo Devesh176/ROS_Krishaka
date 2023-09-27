@@ -83,6 +83,13 @@ rosmsg info 'msg_type'
 /krishaka/config/new_farm_world.world
 </br>
 
+## Here change the path of stl model in the 'new_farm_world.world' file, follow the instructions -
+- open new_farm_world.world file in ide.
+- search for " <uri>/home/devesh/one_crop_row.stl</uri>
+               ----------------------------------</uri>"
+  here replace the path of stl file by absolute path of stl file in your laptop.
+- save the file and done!
+
 ## Now we create a launch file to launch the robot and world simulataneously in gazebo -
 <br>
 /krishaka/launch/world.launch
